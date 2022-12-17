@@ -1,0 +1,686 @@
+<html>
+<head>
+<title>IP Core Generation Report for SDRIP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+div {
+	line-heigh: 90%;
+}
+
+h2.title {
+	color: #000066;
+	font-weight: bold;
+}
+
+h3.sectionHeading {
+	color: #000066;
+	font-weight: bold;
+}
+
+td.distinctCellColor {
+	background-color: #eeeeff;
+}
+
+td.summaryTableSndColOddRow {
+	background-color: #eeeeff;
+	text-align: right;
+}
+
+td.summaryTableSndColEvenRow {
+	text-align: right;
+}
+
+thead.reportTableHeader {
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+<h2 class="title">IP Core Generation Report for SDRIP</h2>
+<div>
+<h3 class="sectionHeading">Summary</h3>
+<table>
+<tbody>
+<tr>
+<td class="distinctCellColor">IP core name
+</td>
+<td class="summaryTableSndColOddRow">SDRIPDUT_ip
+</td>
+</tr>
+<tr>
+<td>IP core version
+</td>
+<td class="summaryTableSndColEvenRow">1.0
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core folder
+</td>
+<td class="summaryTableSndColOddRow"><a href="matlab:uiopen('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\*.*')">hdl_prj\ipcore\SDRIPDUT_ip_v1_0</a>
+</td>
+</tr>
+<tr>
+<td>IP core zip file name
+</td>
+<td class="summaryTableSndColEvenRow">SDRIPDUT_ip_v1_0.zip
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target platform
+</td>
+<td class="summaryTableSndColOddRow">Generic Xilinx Platform
+</td>
+</tr>
+<tr>
+<td>Target tool
+</td>
+<td class="summaryTableSndColEvenRow">Xilinx Vivado
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target language
+</td>
+<td class="summaryTableSndColOddRow">VHDL
+</td>
+</tr>
+<tr>
+<td>Model
+</td>
+<td class="summaryTableSndColEvenRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP')">SDRIP</a>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Model version
+</td>
+<td class="summaryTableSndColOddRow">4.430
+</td>
+</tr>
+<tr>
+<td>HDL Coder version
+</td>
+<td class="summaryTableSndColEvenRow">3.20
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core generated on
+</td>
+<td class="summaryTableSndColOddRow">06-Jun-2022 21:53:50
+</td>
+</tr>
+<tr>
+<td>IP core generated for
+</td>
+<td class="summaryTableSndColEvenRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:29')">SDR IP DUT</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Target Interface Configuration</h3>
+You chose the following target interface configuration for 
+<a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP')">SDRIP</a>
+:
+<br/><br/>
+Processor/FPGA synchronization mode: 
+<b>Free running</b>
+<br/><br/>
+Target platform interface table:
+<br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Port Name
+</td>
+<td>Port Type
+</td>
+<td>Data Type
+</td>
+<td>Target Platform Interfaces
+</td>
+<td>Interface Mapping
+</td>
+<td>Interface Options
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:30')">inphase_in</a>
+</td>
+<td>Inport
+</td>
+<td>int16
+</td>
+<td>External Port
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:74')">quadrature_in</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">int16
+</td>
+<td class="distinctCellColor">External Port
+</td>
+<td class="distinctCellColor">
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:34')">valid_in</a>
+</td>
+<td>Inport
+</td>
+<td>boolean
+</td>
+<td>External Port
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:120')">timerRX</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">uint32
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"100"
+</td>
+<td class="distinctCellColor">RegisterInitialValue 512 EnableReadback inherit
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:121')">timerPC</a>
+</td>
+<td>Inport
+</td>
+<td>uint32
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"104"
+</td>
+<td>RegisterInitialValue 4096 EnableReadback inherit
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:122')">timerTX</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">uint32
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"108"
+</td>
+<td class="distinctCellColor">RegisterInitialValue 512 EnableReadback inherit
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:123')">configuration</a>
+</td>
+<td>Inport
+</td>
+<td>ufix2
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"10C"
+</td>
+<td>RegisterInitialValue 0 EnableReadback inherit
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:95')">enableTX</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">External Port
+</td>
+<td class="distinctCellColor">
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:99')">enableRX</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>External Port
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:100')">chooseTXpath</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">External Port
+</td>
+<td class="distinctCellColor">
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:101')">stateTimer</a>
+</td>
+<td>Outport
+</td>
+<td>ufix2
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"110"
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:102')">cntDetectionAsMode1</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint32
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"114"
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:103')">cntDetectionAsMode2</a>
+</td>
+<td>Outport
+</td>
+<td>uint32
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"118"
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:104')">timerRXCurrent</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint32
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"11C"
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:105')">timerPCCurrent</a>
+</td>
+<td>Outport
+</td>
+<td>uint32
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"120"
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:106')">timerTXCurrent</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint32
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"124"
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:107')">configurationCurrent</a>
+</td>
+<td>Outport
+</td>
+<td>ufix2
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"128"
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:243')">cntDetectionSingle</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint32
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"12C"
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('SDRIP:247')">IQdataSample</a>
+</td>
+<td>Outport
+</td>
+<td>uint32
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"130"
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Register Address Mapping</h3>
+The following AXI4-Lite bus accessible registers were generated for this IP core:
+<br/><br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Register Name
+</td>
+<td>Address Offset
+</td>
+<td>Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IPCore_Reset
+</td>
+<td>0x0
+</td>
+<td>write 0x1 to bit 0 to reset IP core
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IPCore_Enable
+</td>
+<td class="distinctCellColor">0x4
+</td>
+<td class="distinctCellColor">enabled (by default) when bit 0 is 0x1
+</td>
+</tr>
+<tr>
+<td>IPCore_Timestamp
+</td>
+<td>0x8
+</td>
+<td>contains unique IP timestamp (yymmddHHMM): 2206062153
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">timerRX_Data
+</td>
+<td class="distinctCellColor">0x100
+</td>
+<td class="distinctCellColor">data register for Inport timerRX
+</td>
+</tr>
+<tr>
+<td>timerPC_Data
+</td>
+<td>0x104
+</td>
+<td>data register for Inport timerPC
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">timerTX_Data
+</td>
+<td class="distinctCellColor">0x108
+</td>
+<td class="distinctCellColor">data register for Inport timerTX
+</td>
+</tr>
+<tr>
+<td>configuration_Data
+</td>
+<td>0x10C
+</td>
+<td>data register for Inport configuration
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">stateTimer_Data
+</td>
+<td class="distinctCellColor">0x110
+</td>
+<td class="distinctCellColor">data register for Outport stateTimer
+</td>
+</tr>
+<tr>
+<td>cntDetectionAsMode1_Data
+</td>
+<td>0x114
+</td>
+<td>data register for Outport cntDetectionAsMode1
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">cntDetectionAsMode2_Data
+</td>
+<td class="distinctCellColor">0x118
+</td>
+<td class="distinctCellColor">data register for Outport cntDetectionAsMode2
+</td>
+</tr>
+<tr>
+<td>timerRXCurrent_Data
+</td>
+<td>0x11C
+</td>
+<td>data register for Outport timerRXCurrent
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">timerPCCurrent_Data
+</td>
+<td class="distinctCellColor">0x120
+</td>
+<td class="distinctCellColor">data register for Outport timerPCCurrent
+</td>
+</tr>
+<tr>
+<td>timerTXCurrent_Data
+</td>
+<td>0x124
+</td>
+<td>data register for Outport timerTXCurrent
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">configurationCurrent_Data
+</td>
+<td class="distinctCellColor">0x128
+</td>
+<td class="distinctCellColor">data register for Outport configurationCurrent
+</td>
+</tr>
+<tr>
+<td>cntDetectionSingle_Data
+</td>
+<td>0x12C
+</td>
+<td>data register for Outport cntDetectionSingle
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IQdataSample_Data
+</td>
+<td class="distinctCellColor">0x130
+</td>
+<td class="distinctCellColor">data register for Outport IQdataSample
+</td>
+</tr>
+</tbody>
+</table>
+<br/>
+The AXI4 slave write register readback is OFF for the IP core.
+<br/>
+The register address mapping is also in the following C header file for you to use when programming the processor:
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\include\SDRIPDUT_ip_addr.h')">include\SDRIPDUT_ip_addr.h</a>
+<br/>
+The IP core name is appended to the register names to avoid name conflicts.
+</div>
+<div>
+<h3 class="sectionHeading">IP Core User Guide</h3>
+<b>Theory of Operation</b>
+<br/><br/>
+This IP core is designed to be connected to an embedded processor with an 
+<b>AXI4-Lite interface. </b>
+The processor acts as master, and the IP core acts as slave. By accessing the generated registers via the AXI4-Lite interface, the processor can control the IP core, and read and write data from and to the IP core. 
+<br/><br/>
+For example, to reset the IP core, write 0x1 to the bit 0 of IPCore_Reset register. To enable or disable the IP core, write 0x1 or 0x0 to the IPCore_Enable register. To access the data ports of the MATLAB/Simulink algorithm, read or write to the associated data registers.
+<br/><br/>
+<img src="doc_arch_axi4_lite.jpg"/>
+<br/><br/>
+This IP core also support the 
+<b>External Port </b>
+interface. To connect the external ports to the FPGA external IO pins, add FPGA pin assignment constraints in the Xilinx Vivado environment.
+<br/><br/>
+The AXI4 Slave port to pipeline register ratio selected as 35 in task 3.2 for this model. The default delay to read AXI4 register is one clock cycle.
+Depending on the selected ratio and IO connected to AXI4 interface, register pipelining is introduced in the read logic of AXI4 registers.
+For your model AXI4 pipeline register ratio setting 35 is larger than all the readable AXI4 slave registers. Total readable AXI4 slave registers are 10, so no pipelining is added to the AXI4 register read back logic.
+<br/><br/>
+<b>Processor/FPGA Synchronization</b>
+<br/><br/>
+The 
+<b>Free running </b>
+mode means there is no explicit synchronization between embedded processor software execution (SW) and the IP core (HW). SW and HW runs independently. The data written from the processor to IP core takes effect immediately, and the data read from the IP core is the latest data available on the IP core output ports. 
+<br/><br/>
+<img src="free_running.jpg"/>
+<br/><br/>
+<b>Xilinx Vivado Environment Integration</b>
+<br/><br/>
+This IP Core is generated for the Xilinx Vivado environment. The following steps are an example showing how to integrate the generated IP core into Xilinx Vivado environment:
+<br/><br/>
+1. The generated IP core is a zip package file under the IP core folder. Please check the Summary section of this report for the IP zip file name and folder.
+<br/>
+2. In the Vivado project, go to Project Settings -> IP -> Repository Manager, add the folder containing the IP zip file as IP Repository.
+<br/>
+3. In Repository Manger, click the "Add IP" button to add IP zip file to the IP repository. This step adds the generated IP into the Vivado IP Catalog.
+<br/>
+4. In the Vivado project, find the generated IP core in the IP Catalog under category "HDL Coder Generated IP". In you have a Vivado block design open, you can add the generated IP into your block design.
+<br/>
+5. Connect the AXI4-Lite port of the IP core to the embedded processor's AXI master port.
+<br/>
+6. Connect the clock and reset ports of the IP core to the global clock and reset signals.
+<br/>
+7. Assign an Offset Address for the IP core in the Address Editor.
+<br/>
+8. Connect external ports and add FPGA pin assignment constraints to constraint file.
+<br/>
+9. Generate FPGA bitstream and download the bitstream to target device.
+<br/><br/>
+If you are targeting Xilinx Zynq hardwares supported by HDL Coder Support Package for Xilinx Zynq Platform, you can select the board you are using in the Target platform option in the Set Target > Set Target Device and Synthesis Tool task. You can then use Embedded System Integration tasks in HDL Workflow Advisor to help you integrate the generated IP core into Xilinx Vivado environment.
+</div>
+<div>
+<h3 class="sectionHeading">IP Core File List</h3>
+The IP core folder is located at:
+<br/>
+<a href="matlab:uiopen('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\*.*')">hdl_prj\ipcore\SDRIPDUT_ip_v1_0</a>
+<br/>
+Following files are generated under this folder:
+<br/><br/>
+<b>IP core zip file</b>
+<br/>
+<a href="matlab:uiopen('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\*.*')">SDRIPDUT_ip_v1_0.zip</a>
+<br/><br/>
+<b>IP core report</b>
+<br/>
+<a href="matlab:web('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\doc\SDRIP_ip_core_report.html')">doc\SDRIP_ip_core_report.html</a>
+<br/><br/>
+<b>IP core HDL source files</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_SDR_IP_DUT_pkg.vhd')">hdl\vhdl\SDRIPDUT_ip_src_SDR_IP_DUT_pkg.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_Calculate_sample_energy_a_2_b_2.vhd')">hdl\vhdl\SDRIPDUT_ip_src_Calculate_sample_energy_a_2_b_2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_Calculate_xcorr_energy_s_a_2_s_b_2.vhd')">hdl\vhdl\SDRIPDUT_ip_src_Calculate_xcorr_energy_s_a_2_s_b_2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_Accumulator.vhd')">hdl\vhdl\SDRIPDUT_ip_src_Accumulator.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_Detector.vhd')">hdl\vhdl\SDRIPDUT_ip_src_Detector.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_SDR_controller_state_machine.vhd')">hdl\vhdl\SDRIPDUT_ip_src_SDR_controller_state_machine.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_Xcorr_with_a_binary_sequence_s_a_s_b.vhd')">hdl\vhdl\SDRIPDUT_ip_src_Xcorr_with_a_binary_sequence_s_a_s_b.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_slicer.vhd')">hdl\vhdl\SDRIPDUT_ip_src_slicer.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_src_SDR_IP_DUT.vhd')">hdl\vhdl\SDRIPDUT_ip_src_SDR_IP_DUT.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_reset_sync.vhd')">hdl\vhdl\SDRIPDUT_ip_reset_sync.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_dut.vhd')">hdl\vhdl\SDRIPDUT_ip_dut.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_addr_decoder.vhd')">hdl\vhdl\SDRIPDUT_ip_addr_decoder.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_axi_lite_module.vhd')">hdl\vhdl\SDRIPDUT_ip_axi_lite_module.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip_axi_lite.vhd')">hdl\vhdl\SDRIPDUT_ip_axi_lite.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\hdl\vhdl\SDRIPDUT_ip.vhd')">hdl\vhdl\SDRIPDUT_ip.vhd</a>
+<br/>
+<br/>
+<b>IP core C header file</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\SDRIPDUT_ip_v1_0\include\SDRIPDUT_ip_addr.h')">include\SDRIPDUT_ip_addr.h</a>
+</div>
+</body>
+</html>
