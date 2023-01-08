@@ -1,5 +1,5 @@
 # FEELwithSDRs
-This respository consists of the sources code for demonstrating over-the-air computation for federated edge learning. The details are given the following paper:
+This respository consists of the source codes that allow one to realize over-the-air computation for federated edge learning by using Adalm Pluto SDRs. The details are given the following paper.
 
 # A Demonstration of Over-the-Air Computation for Federated Edge Learning - IEEE GLOBECOM 2022
 Abstract:
