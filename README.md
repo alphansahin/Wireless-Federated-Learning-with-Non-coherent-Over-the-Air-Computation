@@ -7,4 +7,3 @@ In this study, we propose a general-purpose synchronization method that allows a
 
 Paper: https://arxiv.org/abs/2209.09954, https://ieeexplore.ieee.org/document/10008778
 
-If you would like to fund this research, please contact me.
