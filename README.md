@@ -9,3 +9,6 @@ In this study, we propose a general-purpose synchronization method that allows a
 
 Paper: https://arxiv.org/abs/2209.09954, https://ieeexplore.ieee.org/document/10008778
 
+
+The coherent version is on the way! 01/13/2025
+
