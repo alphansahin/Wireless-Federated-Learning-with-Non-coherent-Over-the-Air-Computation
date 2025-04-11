@@ -10,5 +10,6 @@ In this study, we propose a general-purpose synchronization method that allows a
 Paper: https://arxiv.org/abs/2209.09954, https://ieeexplore.ieee.org/document/10008778
 
 
-The coherent version is on the way! 01/13/2025
+01/13/2025: The coherent version is on the way!  
+04/11/2025: A demo on coherent aggregation: https://mentor.ieee.org/802.11/dcn/25/11-25-0304-00-aiml-feasibility-study-of-phase-synchronization-for-wireless-federated-learning-over-wlan.pptx
 
